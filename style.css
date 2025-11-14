@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 th, td {
     border: 1px solid black;
     padding: 8px;
@@ -6,9 +10,10 @@ th, td {
 
 body {
     width: 85vw;
+    max-width: 1000px;
     text-align: center;
     margin: auto;
-    padding: 0;
+    padding: 10px;
     background: repeating-linear-gradient(
         135deg,
         #b1e791,
@@ -21,10 +26,133 @@ body {
     font-weight: bold;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.pcpp-part-list {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
 footer {
     margin-top: 20px;
     margin-bottom: 0;
     padding: 2px;
     background-color: darkgrey;
     opacity: 0.5;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    body {
+        width: 95vw;
+        padding: 8px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    table {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto !important;
+        display: block;
+        margin: 5px auto;
+    }
+
+    a {
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+        background: repeating-linear-gradient(
+            135deg,
+            #b1e791,
+            #b1e791 50px,
+            #f5b0ac 50px,
+            #f5b0ac 100px
+        );
+    }
+
+    h1 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 4px;
+        font-size: 12px;
+        word-break: break-word;
+        text-align: left;
+    }
+
+    img {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        text-align: left;
+    }
+
+    td {
+        display: block;
+        text-align: left;
+        padding: 4px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+        text-align: left;
+    }
 }
