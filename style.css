@@ -103,17 +103,17 @@ footer {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 32px;
         margin: 10px 0;
     }
 
     p {
-        font-size: 16px;
+        font-size: 20px;
         padding: 0 5px;
     }
 
     table {
-        font-size: 16px;
+        font-size: 20px;
         display: block;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -122,7 +122,7 @@ footer {
 
     th, td {
         padding: 4px;
-        font-size: 16px;
+        font-size: 20px;
         word-break: break-word;
         text-align: left;
     }
