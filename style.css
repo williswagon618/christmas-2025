@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
@@ -14,15 +15,13 @@ body {
     text-align: center;
     margin: auto;
     padding: 10px;
-    background: repeating-linear-gradient(
-        135deg,
-        #b1e791,
-        #b1e791 100px,
-        #f5b0ac 100px,
-        #f5b0ac 200px
-    );
+    background: repeating-linear-gradient(135deg,
+            #a4ff88,
+            #a4ff88 50px,
+            #ffde70 50px,
+            #ffde70 100px);
     font-family: Arial, sans-serif;
-    color: #313131;
+    color: black;
     font-weight: bold;
 }
 
@@ -70,7 +69,8 @@ footer {
         text-align: left;
     }
 
-    th, td {
+    th,
+    td {
         padding: 6px;
         font-size: 13px;
         text-align: left;
@@ -93,13 +93,11 @@ footer {
         width: 100%;
         padding: 5px;
         text-align: left;
-        background: repeating-linear-gradient(
-            135deg,
-            #b1e791,
-            #b1e791 50px,
-            #f5b0ac 50px,
-            #f5b0ac 100px
-        );
+        background: repeating-linear-gradient(135deg,
+                #a4ff88,
+                #a4ff88 50px,
+                #ffde70 50px,
+                #ffde70 100px);
     }
 
     h1 {
@@ -120,7 +118,8 @@ footer {
         text-align: left;
     }
 
-    th, td {
+    th,
+    td {
         padding: 4px;
         font-size: 20px;
         word-break: break-word;
